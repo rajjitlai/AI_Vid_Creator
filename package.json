@@ -2,8 +2,11 @@
   "name": "video-creation-template",
   "version": "1.0.0",
   "description": "Video Creation Template Repository with Remotion, React 19, Tailwind CSS v4, and Stickman Video Director AI skill.",
-  "repository": {},
-  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajjitlai/AI_Vid_Creator.git"
+  },
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.419",

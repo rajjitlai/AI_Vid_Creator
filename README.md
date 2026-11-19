@@ -1,6 +1,9 @@
-# Video Creation Template
+# AI_Vid_Creator
 
-A production-ready, dual-engine video creation repository powered by **Remotion (React 19 + Tailwind CSS v4)** and the **Stickman Video Director** autonomous video skill.
+A dual-engine programmatic video creation repository designed for use with **Google Antigravity CLI** and **Remotion (React 19 + Tailwind CSS v4)**.
+
+- **GitHub Repository**: [https://github.com/rajjitlai/AI_Vid_Creator](https://github.com/rajjitlai/AI_Vid_Creator)
+- **Engine Support**: React-based declarative video rendering alongside autonomous stickman video directing.
 
 ---
 
@@ -129,3 +132,26 @@ The integrated skill in [.agents/skills/directing-stickman-videos](file:///D:/Co
 
 - All individual video projects and rendering intermediate caches are authored inside `projects/` (e.g. `projects/my-first-video/`).
 - The `projects/` folder contains a tracked `.gitkeep`, but all project subdirectories, raw PNG frames, and audio/video candidates are excluded from version control via `.gitignore`.
+
+---
+
+## Antigravity CLI Integration
+
+This repository is optimized to work with **Google Antigravity CLI** (`agy`).
+- The agent skill resides in `.agents/skills/directing-stickman-videos/`.
+- The CLI automatically discovers the skill in your workspace, allowing you to direct and render videos via natural language instructions.
+
+---
+
+## Credits & Acknowledgements
+
+- **Stickman Video Director**: Built using the skill architecture from [`kaomei/stickman-video-director`](https://github.com/kaomei/stickman-video-director).
+- **Remotion**: Programmatic video creation library for React ([remotion.dev](https://www.remotion.dev)).
+- **Audio Assets**: Public domain and Creative Commons attribution tracks credited in the bundled audio index.
+
+---
+
+## License
+
+This project is open-source under the MIT License. See [LICENSE](LICENSE) for details. Remotion dependencies follow Remotion's licensing guidelines.
+
