@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/rajjitlai/AI_Vid_Creator.git"
   },
+  "author": "Rajjit Laishram",
   "license": "MIT",
   "private": true,
   "dependencies": {

@@ -1,25 +1,45 @@
-# AI_Vid_Creator
+# 🎬 AI_Vid_Creator
 
-A dual-engine programmatic video creation repository designed for use with **Google Antigravity CLI** and **Remotion (React 19 + Tailwind CSS v4)**.
+<p align="center">
+  <a href="https://github.com/rajjitlai/AI_Vid_Creator/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT"></a>
+  <a href="https://remotion.dev"><img src="https://img.shields.io/badge/Remotion-v4.0-red?style=for-the-badge&logo=remotion&logoColor=white" alt="Remotion v4"></a>
+  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=black" alt="React 19"></a>
+  <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS v4"></a>
+  <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-5.9-3178c6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></a>
+  <a href="https://github.com/rajjitlai/AI_Vid_Creator"><img src="https://img.shields.io/badge/Google_Antigravity-Ready-4285f4?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity Ready"></a>
+  <a href="https://github.com/rajjitlai/AI_Vid_Creator/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome"></a>
+</p>
 
-- **GitHub Repository**: [https://github.com/rajjitlai/AI_Vid_Creator](https://github.com/rajjitlai/AI_Vid_Creator)
-- **Engine Support**: React-based declarative video rendering alongside autonomous stickman video directing.
+<p align="center">
+  <b>A dual-engine programmatic video creation suite designed for Google Antigravity CLI and Remotion.</b>
+</p>
+
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-project-structure">Structure</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-workflow-1-react--remotion-video-authoring">Remotion React</a> •
+  <a href="#-workflow-2-stickman-video-director-ai-autopilot">Stickman Director</a> •
+  <a href="#-antigravity-cli-integration">Antigravity CLI</a> •
+  <a href="#-credits--acknowledgements">Credits</a> •
+  <a href="#-license">License</a>
+</p>
 
 ---
 
-## Features
+## ✨ Features
 
-- 🎬 **Remotion Programmatic Engine**: Declarative, code-driven video creation using React 19, TypeScript, and Tailwind CSS v4.
+- 🎬 **Remotion Programmatic Engine**: Declarative, code-driven video authoring using React 19, TypeScript, and Tailwind CSS v4.
 - 📐 **Preset Multi-Format Ratios**: Ready-to-use compositions for all major platforms:
-  - **16:9 Landscape** (`1920×1080` @ 30fps) — YouTube, desktop, widescreen.
-  - **9:16 Portrait** (`1080×1920` @ 30fps) — TikTok, YouTube Shorts, Instagram Reels.
-  - **1:1 Square** (`1080×1080` @ 30fps) — Instagram and LinkedIn feeds.
-- 🤖 **Stickman Video Director**: Autonomous agent skill in `.agents/skills/directing-stickman-videos` capable of converting scripts/stories into fully animated, captioned, speech-synchronized videos (B1–B5 styles).
+  - 🖥️ **16:9 Landscape** (`1920×1080` @ 30fps) — YouTube, desktop, widescreen.
+  - 📱 **9:16 Portrait** (`1080×1920` @ 30fps) — TikTok, YouTube Shorts, Instagram Reels.
+  - 🔲 **1:1 Square** (`1080×1080` @ 30fps) — Instagram and LinkedIn feeds.
+- 🤖 **Stickman Video Director**: Autonomous agent skill in `.agents/skills/directing-stickman-videos` capable of converting stories into fully animated, captioned, speech-synchronized videos (B1–B5 styles).
 - 🧹 **Clean Git Architecture**: Built-in `.gitignore` rules isolate individual video generation projects, audio stems, and raw frame caches in `projects/` without cluttering the repository.
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 ├── .agents/
@@ -45,15 +65,15 @@ A dual-engine programmatic video creation repository designed for use with **Goo
 
 ---
 
-## Quick Start
+## ⚡ Quick Start
 
-### 1. Install Dependencies
+### 1. 📦 Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Launch Remotion Studio
+### 2. 🖥️ Launch Remotion Studio
 
 Preview, scrub, and inspect compositions in real-time with hot module replacement:
 
@@ -61,7 +81,7 @@ Preview, scrub, and inspect compositions in real-time with hot module replacemen
 npm run dev
 ```
 
-### 3. Render Compositions
+### 3. 🎥 Render Compositions
 
 Render any of the built-in presets directly:
 
@@ -84,7 +104,7 @@ npx remotion render <CompositionId> out/my-video.mp4 --props='{"title":"Hello Wo
 
 ---
 
-## Workflow 1: React & Remotion Video Authoring
+## 🎨 Workflow 1: React & Remotion Video Authoring
 
 1. Create a new component in `src/compositions/MyVideo.tsx` using standard Remotion hooks (`useCurrentFrame`, `useVideoConfig`, `spring`, `interpolate`).
 2. Register your composition in [src/Root.tsx](file:///D:/Code/Remotion_Test/src/Root.tsx):
@@ -107,7 +127,7 @@ npx remotion render <CompositionId> out/my-video.mp4 --props='{"title":"Hello Wo
 
 ---
 
-## Workflow 2: Stickman Video Director (AI Autopilot)
+## 🤖 Workflow 2: Stickman Video Director (AI Autopilot)
 
 The integrated skill in [.agents/skills/directing-stickman-videos](file:///D:/Code/Remotion_Test/.agents/skills/directing-stickman-videos/SKILL.md) supports automated video creation:
 
@@ -119,7 +139,7 @@ The integrated skill in [.agents/skills/directing-stickman-videos](file:///D:/Co
   - Enforces strict motion quality verification ($\le 2.5\text{s}$ static intervals).
   - Encodes final broadcast MP4s directly into `projects/<project-name>/`.
 
-### Supported Styles
+### 🎭 Supported Styles
 - **B1**: Minimalist Line Art
 - **B2**: High-contrast Monochrome
 - **B3**: Vibrant Dynamic Animation
@@ -128,14 +148,14 @@ The integrated skill in [.agents/skills/directing-stickman-videos](file:///D:/Co
 
 ---
 
-## Git & Project Management
+## 🛡️ Git & Project Management
 
 - All individual video projects and rendering intermediate caches are authored inside `projects/` (e.g. `projects/my-first-video/`).
 - The `projects/` folder contains a tracked `.gitkeep`, but all project subdirectories, raw PNG frames, and audio/video candidates are excluded from version control via `.gitignore`.
 
 ---
 
-## Antigravity CLI Integration
+## 🚀 Antigravity CLI Integration
 
 This repository is optimized to work with **Google Antigravity CLI** (`agy`).
 - The agent skill resides in `.agents/skills/directing-stickman-videos/`.
@@ -143,7 +163,7 @@ This repository is optimized to work with **Google Antigravity CLI** (`agy`).
 
 ---
 
-## Credits & Acknowledgements
+## 🙏 Credits & Acknowledgements
 
 - **Stickman Video Director**: Built using the skill architecture from [`kaomei/stickman-video-director`](https://github.com/kaomei/stickman-video-director).
 - **Remotion**: Programmatic video creation library for React ([remotion.dev](https://www.remotion.dev)).
@@ -151,7 +171,6 @@ This repository is optimized to work with **Google Antigravity CLI** (`agy`).
 
 ---
 
-## License
+## 📄 License
 
-This project is open-source under the MIT License. See [LICENSE](LICENSE) for details. Remotion dependencies follow Remotion's licensing guidelines.
-
+This project is open-source under the MIT License — see the [LICENSE](LICENSE) file for details (Author: **Rajjit Laishram**). Remotion dependencies follow Remotion's licensing guidelines.
