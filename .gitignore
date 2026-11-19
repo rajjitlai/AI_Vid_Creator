@@ -1,7 +1,39 @@
-node_modules
-dist
-.DS_Store
-.env
+# Dependencies
+node_modules/
+**/node_modules/
 
-# Ignore the output video from Git but not videos you import into src/.
-out
+# Production builds and bundles
+dist/
+build/
+.cache/
+out/
+
+# Environment variables & secrets
+.env
+.env*.local
+*.pem
+*.key
+
+# Operating system files
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Video creation project outputs & working directories
+# Keeps template repository clean while individual video projects are authored in projects/
+projects/
+*-frames/
+*-candidate/
+*.mp4
+*.wav
+*.m4a
+*.webm
+*.avi
+
+# Python / TTS cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+

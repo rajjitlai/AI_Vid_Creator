@@ -1,7 +1,7 @@
 {
-  "name": "remotion_test",
+  "name": "video-creation-template",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "Video Creation Template Repository with Remotion, React 19, Tailwind CSS v4, and Stickman Video Director AI skill.",
   "repository": {},
   "license": "UNLICENSED",
   "private": true,
@@ -26,6 +26,10 @@
   "scripts": {
     "dev": "remotion studio",
     "build": "remotion bundle",
+    "render": "remotion render",
+    "render:landscape": "remotion render Landscape out/landscape.mp4",
+    "render:portrait": "remotion render Portrait out/portrait.mp4",
+    "render:square": "remotion render Square out/square.mp4",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"
   },
